@@ -25,6 +25,10 @@ import HowNotToFetchApi from './Components/hooks/HowNotToFetchApi'
 import UseRefHook from './Components/hooks/UseRefHook'
 import ForwardRef from './Components/hooks/ForwardRef'
 import UseId from './Components/hooks/UseId'
+import PropDrilling from './Components/PropDrilling'
+import { BioProvider } from './Components/hooks/contextApi'
+import Home from './Components/hooks/contextApi/Home'
+import About from './Components/hooks/contextApi/About'
 
 
 const App = () => {
@@ -53,7 +57,12 @@ const App = () => {
     {/* <HowNotToFetchApi/> */}
     {/* <UseRefHook/> */}
     {/* <ForwardRef/> */}
-    <UseId/>
+    {/* <UseId/> */}
+    {/* <PropDrilling/> */}
+    <BioProvider>
+      <Home/>
+      <About/>
+    </BioProvider>
     </section>
   )
 }
