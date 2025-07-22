@@ -24,6 +24,7 @@ import UseEffectCleanUp from './Components/hooks/UseEffectCleanUp'
 import HowNotToFetchApi from './Components/hooks/HowNotToFetchApi'
 import UseRefHook from './Components/hooks/UseRefHook'
 import ForwardRef from './Components/hooks/ForwardRef'
+import UseId from './Components/hooks/UseId'
 
 
 const App = () => {
@@ -51,7 +52,8 @@ const App = () => {
     {/* <UseEffectCleanUp/> */}
     {/* <HowNotToFetchApi/> */}
     {/* <UseRefHook/> */}
-    <ForwardRef/>
+    {/* <ForwardRef/> */}
+    <UseId/>
     </section>
   )
 }
