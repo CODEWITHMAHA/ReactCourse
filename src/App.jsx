@@ -29,6 +29,7 @@ import PropDrilling from './Components/PropDrilling'
 import { BioProvider } from './Components/hooks/contextApi'
 import Home from './Components/hooks/contextApi/Home'
 import About from './Components/hooks/contextApi/About'
+import { LightDark, ThemeProvider } from './Components/hooks/contextApi/LightDark'
 
 
 const App = () => {
@@ -59,10 +60,13 @@ const App = () => {
     {/* <ForwardRef/> */}
     {/* <UseId/> */}
     {/* <PropDrilling/> */}
-    <BioProvider>
+    {/* <BioProvider>
       <Home/>
       <About/>
-    </BioProvider>
+    </BioProvider> */}
+    <ThemeProvider>
+      <LightDark/>
+    </ThemeProvider>
     </section>
   )
 }
