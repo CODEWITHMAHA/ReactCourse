@@ -30,6 +30,7 @@ import { BioProvider } from './Components/hooks/contextApi'
 import Home from './Components/hooks/contextApi/Home'
 import About from './Components/hooks/contextApi/About'
 import { LightDark, ThemeProvider } from './Components/hooks/contextApi/LightDark'
+import UseReducer from './Components/hooks/UseReducer'
 
 
 const App = () => {
@@ -64,9 +65,10 @@ const App = () => {
       <Home/>
       <About/>
     </BioProvider> */}
-    <ThemeProvider>
+    {/* <ThemeProvider>
       <LightDark/>
-    </ThemeProvider>
+    </ThemeProvider> */}
+    <UseReducer />
     </section>
   )
 }
